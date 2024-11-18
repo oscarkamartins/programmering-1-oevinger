@@ -1,0 +1,46 @@
++-------------------------+
+| Dish                    |
++-------------------------+
+| - name: String          |
+| - type: String          |
+| - recipe: String        |
+| - price: double         |
++-------------------------+
+| + getName(): String     |
+| + getType(): String     |
+| + getRecipe(): String   |
+| + getPrice(): double    |
+| + toString(): String    |
++-------------------------+
+            ^
+            |
+            |
+            |
++--------------------------------+
+| Menu                           |
++--------------------------------+
+| - dishes: ArrayList<Dish>      |
+| - id: int                      |
++--------------------------------+
+| + getDishes(): ArrayList<Dish> |
+| + getId(): int                 |
+| + addDish(dish: Dish): void    |
+| + price(): double              |
+| + toString(): String           |
++--------------------------------+
+            ^
+            |
+            |
+            |
++--------------------------------------------------------------------------------+
+| MenuRegister                                                                   |
++--------------------------------------------------------------------------------+
+| - menus: ArrayList<Menu>                                                       |
++--------------------------------------------------------------------------------+
+| + getMenus(): ArrayList<Menu>                                                  |
+| + addDishToMenu(menuId: int, dish: Dish): void                                 |
+| + findDishByName(dishName: String): Dish                                       |
+| + findDishByType(dishType: String): ArrayList<Dish>                            |
+| + addMenu(dishes: ArrayList<Dish>): void                                       |
+| + menusInPriceInterval(lowest: double, highest: double): ArrayList<Menu>       |
++--------------------------------------------------------------------------------+

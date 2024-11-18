@@ -1,0 +1,9 @@
+User                     PropertyRegister
+ |                             |
+ |-------- pickOption() ------>|
+ |                             |
+ |------- listProperties() --->|
+ |                             |
+ |<---- toString() ------------|
+ |                             |
+ |--------- display() -------->|
